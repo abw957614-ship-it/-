@@ -1,0 +1,105 @@
+/* إعدادات عامة */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* حاوية النموذج */
+.form-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h2 {
+  color: #2c3e50;
+  margin-bottom: 6px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-container .subtitle {
+  color: #7f8c8d;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* مجموعات المدخلات */
+.input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+/* تنسيق الحقول والقوائم */
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #dcdfe6;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #2c3e50;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* تأثير التركيز عند الضغط على الحقل */
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* زر الإرسال */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.submit-btn:active {
+  transform: scale(0.99);
+}

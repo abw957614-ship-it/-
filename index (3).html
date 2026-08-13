@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نموذج إدخال البيانات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>تسجيل البيانات</h2>
+    <p class="subtitle">يرجى ملء الحقول التالية بعناية</p>
+
+    <form action="#" method="POST">
+      
+      <!-- الاسم الكامل -->
+      <div class="input-group">
+        <label for="fullname">الاسم الكامل</label>
+        <input type="text" id="fullname" name="fullname" placeholder="أدخل اسمك الكامل" required>
+      </div>
+
+      <!-- البريد الإلكتروني -->
+      <div class="input-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+      </div>
+
+      <!-- رقم الهاتف -->
+      <div class="input-group">
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" placeholder="770000000">
+      </div>
+
+      <!-- القائمة المنسدلة -->
+      <div class="input-group">
+        <label for="department">القسم / التخصص</label>
+        <select id="department" name="department" required>
+          <option value="" disabled selected>اختر القسم...</option>
+          <option value="it">نظم المعلومات</option>
+          <option value="cs">علوم الحاسوب</option>
+          <option value="marketing">التسويق الرقمي</option>
+          <option value="business">إدارة الأعمال</option>
+        </select>
+      </div>
+
+      <!-- الملاحظات / الرسالة -->
+      <div class="input-group">
+        <label for="notes">ملاحظات إضافية</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="اكتب أي ملاحظات أخرى هنا..."></textarea>
+      </div>
+
+      <!-- زر الإرسال -->
+      <button type="submit" class="submit-btn">إرسال البيانات</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
